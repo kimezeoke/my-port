@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimberly's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=emboss">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            background-color: lavender;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            opacity: .9;
+        }
+
+        .navbar a {
+            color: rgb(0, 0, 0);
+            padding: 20px 45px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: 'Times' serif;
+        }
+
+        .navbar a:hover {
+            background-color: #fafafa;
+            opacity: 0.3;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70vh;
+            background-color: rgb(255, 255, 255);
+            padding: 100px 0px 0px;
+        }
+
+        .intro-text {
+    flex: 1;
+    
+}
+
+.intro-text h1 {
+    font-size: 3em;
+    margin: 0; /* Removes any margins */
+    padding-left: 50px; /* Adds space on the left */
+    text-align: left; /* Ensures text aligns to the left */
+    margin-top: -200px;
+    font-family: "Trirong", serif;
+    color: black;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin: 10px 0 0 50px; /* Moves the paragraph directly under the heading */
+}
+
+
+        .intro-image {
+            margin-right:-100px ;
+            margin-top: 84px;
+        }
+
+        .intro-image img {
+            height: 600px;
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            background-color: lavender;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .portfolio-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+
+        .portfolio-gallery {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .portfolio-gallery img {
+            width: 30%;
+            border-radius: 10px;
+        }
+        
+
+        .view-all {
+            margin-top: 20px;
+        }
+
+        .view-all button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .view-all button:hover {
+            background-color: #575757;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-icons img {
+            width: 70px; /* Set the size of the icons */
+            height: 70px;
+            margin: 0 15px;
+        }
+        .footer-icons .instagram-icon {
+            margin-top: 5px;
+            width: 75px;
+            height: 75px;
+        }
+        .contact-info span {
+            display: inline-block;
+            margin: 0 10px; /* Add space between phone and email */
+        }
+
+        .contact-info span:before {
+            content: "|";
+            margin-right: 10px;
+        }
+
+        .contact-info span:first-child:before {
+            content: ""; /* Remove pipe symbol before the first item */
+        }
+
+        .footer-icons a:hover img {
+            opacity: 0.7; /* Reduce opacity on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="aboutMe.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contactMe.html">Contact</a>
+    </div>
+
+    <!-- Intro Section -->
+    <section class="intro-section" id="home">
+        <div class="intro-text">
+            <h1 class="font-effect-emboss">Hello! I'm Kimberly Ume-Ezeoke</h1>
+            <p>I’m a UX designer who blends my technical and design skills to create unique user experiences. I focus on creating designs that are both visually appealing and highly beneficial.</p>
+        </div>
+        <div class="intro-image">
+            <img src="file:///Users/kimezeoke/Downloads/Screenshot%202024-03-07%20at%204.53-Photoroom.png"  width="650" height="-50">
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <h2>Featured Projects</h2>
+        <div class="portfolio-gallery">
+            <img src="file:///Users/kimezeoke/Downloads/ou%20park%20gif.gif" >
+            <img src="file:///Users/kimezeoke/Desktop/Screenshot%202024-09-15%20at%2010.36.23%E2%80%AFPM.png" >
+            <img src="project3.jpg" alt="Project 3">
+        </div>
+        <div class="view-all">
+            <button onclick="viewPortfolio()">View All</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/lulu.lemon.940436?mibextid=LQQJ4d" target="_blank">
+                <img src="file:///Users/kimezeoke/Downloads/Screenshot%202024-09-15%20at%208.34-Photoroom.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/kimezeoke/" target="_blank">
+                <img src="file:///Users/kimezeoke/Downloads/Screenshot%202024-09-15%20at%208.34-Photoroom-3.png" alt="Instagram" class="instagram-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/kim-ezeoke/" target="_blank">
+                <img src="file:///Users/kimezeoke/Downloads/Screenshot%202024-09-15%20at%208.34-Photoroom-2.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="contact-info">
+            <span>+469-671-8559</span>
+            
+            <span><a href="mailto:kimberly.c.ume.ezeoke-1@ou.edu" style="color: white; text-decoration: none;">kimberly.c.ume.ezeoke-1@ou.edu</a></span>
+        </div>
+        <p>© 2024 Kimberly Ume Ezeoke</p>
+    </footer>
+
+    <script>
+        function viewPortfolio() {
+            window.location.href = 'portfolio.html';
+        }
+    </script>
+
+</body>
+</html>
